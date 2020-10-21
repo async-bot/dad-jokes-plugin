@@ -13,7 +13,7 @@ class ParseICHDJResult
     public function parse(array $jsonResponse): DadJoke
     {
         return new DadJoke(
-            $this->getJoke($jsonResponse),
+            $this->getJoke($jsonResponse)
         );
     }
 
