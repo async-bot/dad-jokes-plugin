@@ -2,10 +2,10 @@
 
 namespace AsyncBot\Plugin\DadJokes\Exception;
 
-class DadJokeNotFound extends Exception
+class InvalidDadJoke extends Exception
 {
     public function __construct()
     {
-        parent::__construct('Sorry, I can\'t remember any jokes right now :-(');
+        parent::__construct('Sorry, I don\'t get that joke, I need `name / joke`.');
     }
 }
